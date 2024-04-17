@@ -13,46 +13,63 @@ class GildedRose {
 
     public void updateQuality() {
         for (Item item : items) {
+            updateItem(item);
+        }
+    }
 
-            if (isAgedBrie(item)) {
-                // Quality
-                if (item.quality < MAX_QUALITY) {
-                    item.quality = item.quality + 1;
-                }
-                // sellIn
-                decreaseSellIn(item);
-                if (isNegativeSellIn(item)) {
-                    increaseQuality(item);
-                }
-            } else if (isBackStagePass(item)) {
-                // Quality
-                if (item.quality < MAX_QUALITY) {
-                    item.quality = item.quality + 1;
+    private static void updateItem(Item item) {
+        if (isAgedBrie(item)) {
+            updateAgedBrieQuality(item);
+            updateAgedBrieSellIn(item);
+        } else if (isBackStagePass(item)) {
+            updateBackStageQuality(item);
+            updateBackStageSellIn(item);
+        } else if (isSulfuras(item)) {
+            // Sulfuras doenst`s change
+            return;
+        } else {
+            updateRegularQuality(item);
+        }
+    }
 
-                    if (isBackStagePass(item)) {
-                        sellInLowerThanX(item, 11);
-                        sellInLowerThanX(item, 6);
-                    }
-                }
-                // sellIn
-                decreaseSellIn(item);
-                if (isNegativeSellIn(item)) {
-                    item.quality = 0;
-                }
-            } else if (isSulfuras(item)) {
+    private static void updateRegularQuality(Item item) {
+        if (!isNegativeSellIn(item)) {
+            item.quality = item.quality - 1;
+        }
 
-            } else {
-                // Default case, regular item
-                if (!isNegativeSellIn(item)) {
-                    item.quality = item.quality - 1;
-                }
+        if (item.sellIn == 0) {
+            item.quality = item.quality - 1;
 
-                if (item.sellIn == 0) {
-                    item.quality = item.quality - 1;
+        }
+    }
 
-                }
+    private static void updateBackStageSellIn(Item item) {
+        decreaseSellIn(item);
+        if (isNegativeSellIn(item)) {
+            item.quality = 0;
+        }
+    }
+
+    private static void updateBackStageQuality(Item item) {
+        if (item.quality < MAX_QUALITY) {
+            item.quality = item.quality + 1;
+
+            if (isBackStagePass(item)) {
+                sellInLowerThanX(item, 11);
+                sellInLowerThanX(item, 6);
             }
         }
+    }
+
+    private static void updateAgedBrieSellIn(Item item) {
+        decreaseSellIn(item);
+        if (isNegativeSellIn(item)) {
+            increaseQuality(item);
+        }
+    }
+
+    private static void updateAgedBrieQuality(Item item) {
+       increaseQuality(item);
     }
 
 
