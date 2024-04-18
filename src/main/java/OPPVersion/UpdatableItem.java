@@ -26,6 +26,12 @@ public abstract class UpdatableItem extends Item{
             quality = quality + 1;
         }
     }
+    protected static void decreaseQuality() {
+        if (quality > 0) {
+            quality = quality - 1;
+        }
+    }
+
     protected static void sellInLowerThanX(int x) {
         if (sellIn < x) {
             increaseQuality();

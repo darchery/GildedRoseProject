@@ -299,7 +299,7 @@ class GildedRoseTest {
       assertEquals(quality - 2, newQuality);
     }
   }
-/*
+
   @Nested
   @DisplayName("When update a conjured item")
   class TestCasesForConjuredItems {
@@ -389,6 +389,6 @@ class GildedRoseTest {
       assertEquals(0, newQuality);
     }
 
-  }*/
+  }
 
 }
