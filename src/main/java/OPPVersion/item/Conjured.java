@@ -25,8 +25,6 @@ public class Conjured extends UpdatableItem {
         if (sellIn == 0) {
             decreaseQuality();
             decreaseQuality();
-            decreaseQuality();
-            decreaseQuality();
         }
         else {
             decreaseSellIn();
