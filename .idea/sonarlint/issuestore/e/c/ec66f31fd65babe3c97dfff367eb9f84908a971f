@@ -1,0 +1,24 @@
+
+Œ
+java:S1104"PMake name a static final constant or non-public and provide accessors if needed.( şÍ¾J$d1f8e336-e9fe-468a-814c-2c76711f5263
+
+java:S1104"RMake sellIn a static final constant or non-public and provide accessors if needed.(ª—‘„J$610f02a3-d083-4dff-abaa-c8b514da29f8
+
+java:S1104	"SMake quality a static final constant or non-public and provide accessors if needed.(ÉëÉ±J$6774e7b1-0172-4d8f-83ee-5634b5cd5d97
+o
+java:S1444",Make this "public static sellIn" field final(ª—‘„8äéÖï1J$c11acdbb-79eb-48ab-b062-6704ce70594c
+p
+java:S1444	"-Make this "public static quality" field final(ÉëÉ±8ïÖÖï1J$e6a74280-a6b0-419a-8683-a2953dac6759
+•	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(»èÈ¾J$08812427-ec4e-4914-bb1a-49bea0b326c5
+f
+java:S3010"#Remove this assignment of "sellIn".(­·’û8ëéÖï1J$fe588293-d41e-4eda-bfab-f73dd0a53e13
+l
+java:S3010"$Remove this assignment of "quality".(ô½´İúÿÿÿÿ8öÖÖï1J$244dc5cb-6e53-414a-a90c-6ee2892bd77d
+x
+java:S2209"5Change this instance-reference to a static reference.(­·’û8øÖÖï1J$1b845063-4a54-4c74-a6ef-f50a1c4528b5
+}
+java:S2209"5Change this instance-reference to a static reference.(ô½´İúÿÿÿÿ8ùÖÖï1J$f86ba1a9-e8cd-49a4-96b2-9c4c19d6d197
+x
+java:S2209"5Change this instance-reference to a static reference.(û½ñ8îéÖï1J$1ee5de16-2a21-42ee-844c-2068fd0b5bdc
+x
+java:S2209"5Change this instance-reference to a static reference.(û½ñ8ïéÖï1J$55179d4a-3b17-4adc-9480-ca08e3c0ef96
