@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0898a7e3-617a-4910-93e8-7d0385f2da9c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/OPPVersion/UpdatableItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/OPPVersion/UpdatableItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/gildedrose/refactored/GildedRoseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/gildedrose/refactored/GildedRoseTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +47,7 @@
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/lucas/Documents/IntellijLucas/Factorial"
+    "last_opened_file_path": "C:/Users/lucas/Documents/IntellijLucas/practicasIntroIngSoftware/pruebaGildedRose/GildedRoseProject"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -90,16 +90,5 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/gildedrose/refactored/GildedRoseTest.java</url>
-          <line>19</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

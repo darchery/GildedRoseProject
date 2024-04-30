@@ -36,7 +36,7 @@ class GildedRoseTest {
 
     @DisplayName("Increases its quality by two if sellIn is zero")
     @Test
-    void givenAQualityValueAndSellInIsZeroWhenUpdateThenQualityIncreasesByOne() {
+    void givenAQualityValueAndSellInIsZeroWhenUpdateThenQualityIncreasesByTwo() {
       // Arrange
       int quality = 10;
       int sellIn = 0;
